@@ -1,0 +1,2514 @@
+{
+	"info": {
+		"_postman_id": "ce1a1777-1040-4a78-8b83-28f34c1a6e3f",
+		"name": "PROYECTO_BACKEND_ON_AZURE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32645553"
+	},
+	"item": [
+		{
+			"name": "ms-externalapi (No publico - Int port: 8000)",
+			"item": [
+				{
+					"name": "toReniec",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://hosp-service.eastus.cloudapp.azure.com:8000/ms-externalapi/v1/reniec/41947273",
+							"protocol": "http",
+							"host": [
+								"hosp-service",
+								"eastus",
+								"cloudapp",
+								"azure",
+								"com"
+							],
+							"port": "8000",
+							"path": [
+								"ms-externalapi",
+								"v1",
+								"reniec",
+								"41947273"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toHealthInsurance",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://hosp-service.eastus.cloudapp.azure.com:8000/ms-externalapi/v1/insurance/rimac?documento=70242482&cobertura=LAB2",
+							"protocol": "http",
+							"host": [
+								"hosp-service",
+								"eastus",
+								"cloudapp",
+								"azure",
+								"com"
+							],
+							"port": "8000",
+							"path": [
+								"ms-externalapi",
+								"v1",
+								"insurance",
+								"rimac"
+							],
+							"query": [
+								{
+									"key": "documento",
+									"value": "70242482"
+								},
+								{
+									"key": "cobertura",
+									"value": "LAB2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ms-security (Int port: 8095)",
+			"item": [
+				{
+					"name": "authenticationController",
+					"item": [
+						{
+							"name": "logins",
+							"item": [
+								{
+									"name": "systemLogin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"system\",\r\n    \"password\" : \"system\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "adminLogin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"admin\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "userLogin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"user\",\r\n    \"password\" : \"user\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "doctorLogin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"doctor\",\r\n    \"password\" : \"doctor\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "nurseLogin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"nurse\",\r\n    \"password\" : \"nurse\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "labLogin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"lab\",\r\n    \"password\" : \"lab\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8080",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "otherUser",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"mmoralesca\",\r\n    \"password\" : \"mmoralesca\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://hosp-service.eastus.cloudapp.azure.com:8095/ms-security/v1/autenticacion/login",
+											"protocol": "http",
+											"host": [
+												"hosp-service",
+												"eastus",
+												"cloudapp",
+												"azure",
+												"com"
+											],
+											"port": "8095",
+											"path": [
+												"ms-security",
+												"v1",
+												"autenticacion",
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "verify (No publico)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzNTQyNDgsImV4cCI6MTcxMjM1NDM2OH0.AtnUjnn3xeiX0nHheiFKfKRATWH4x1jP5DbfIulYTEs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/verify",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"autenticacion",
+										"verify"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recoveryAccess",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/recovery/jcampos",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"autenticacion",
+										"recovery",
+										"jcampos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "restorePassword",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"jcampos\",\r\n    \"token\" : \"576253\",\r\n    \"newPassword\" : \"doctor\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/autenticacion/restore",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"autenticacion",
+										"restore"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "systemController",
+					"item": [
+						{
+							"name": "registrar sin token en URL",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\" : \"system\",\r\n    \"password\" : \"system\",\r\n    \"email\"    : \"system@hosp.com\",\r\n    \"telefono\" : \"90938499\",\r\n    \"roles\" : [\"SYSTEM\",\"DOCTOR\"]\r\n    \r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/system/register",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"system",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register as SYSTEM",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzMzYxNjgsImV4cCI6MTcxMjMzNjI4OH0.T2h0wr8OgU6tXG7VoYauYBM6U8q85IKRJ-_TNMePcC8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\" : \"mmoralesca\",\r\n    \"password\" : \"mmoralesca\",\r\n    \"email\"    : \"mmoralesca82@gmail.com\",\r\n    \"telefono\" : \"950509148\",\r\n    \"roles\" : [\"ADMIN\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/system/register",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"system",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUser as SYSTEM by ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTA2MjcyMzgsImV4cCI6MTcxMDYyOTAzOH0.WIM5_dXR-tBk4zV-3r73hHKw1lj889hPGUu2oaOwaB8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"telefono\" : \"90938477\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/system/7",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"system",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update as SYSTEM by ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTA1OTY0MjAsImV4cCI6MTcxMDU5ODIyMH0.1FKp3t1qR5pK164pgg5dcqffKutusE-Muzjyyli99z8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"telefono\" : \"90938433\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/system/7",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"system",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete as SYSTEM by ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTA2MjcyMzgsImV4cCI6MTcxMDYyOTAzOH0.WIM5_dXR-tBk4zV-3r73hHKw1lj889hPGUu2oaOwaB8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-security/v1/system/7",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-security",
+										"v1",
+										"system",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ms-registro (Int port: 8020)",
+			"item": [
+				{
+					"name": "DoctorController",
+					"item": [
+						{
+							"name": "buscarDoctorByDoc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTA4OTAzMDUsImV4cCI6MTcxMDg5MDQyNX0.dRZqMmtoAt0pBflJBDx0Bh1a0DXbg5LDFqwn4kBYMNM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/doctor/70242482",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"doctor",
+										"70242482"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllEnableDoctors",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDc4NTU2NywiZXhwIjoxNzEwNzg1Njg3fQ.IgaS-hHNCN1VInXMPVat9qdcEamCKYNs_7vWuOphm7U",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/doctor/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"doctor",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registrarDoctor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDg4NzA1NSwiZXhwIjoxNzEwODg3MTc1fQ.wbcTmw3xp4mKu40Cj_O62scUP3w_UZtvNmID_876rks",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numDocumento\" : \"70242482\",\r\n\t\"genero\" : \"masculino\",\r\n\t\"registroMedico\": \"CMP-189655\",\r\n\t\"telefono\" : \"963479685\",\r\n    \"especialidad\" : \"cardiologia\",\r\n\t\"direccion\" : \r\n   {\r\n\t \t\"via\" :   \"Av. Angamos\",\r\n\t\t\"numeroPredio\" : 2578 ,\r\n\t\t\"interior\" : \"\",\r\n\t\t\"referencia\": \"\",\r\n\t\t\"distrito\" : \"San Borja\",\r\n\t\t\"provincia\": \"Lima\",\r\n\t\t\"departamento\" : \"Lima\"\r\n    }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/doctor",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"doctor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modificarDoctor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDc4Njk3MywiZXhwIjoxNzEwNzg3MDkzfQ.B2D4hpWsJUo-ZRperbMK_iTTD5lA6dLvyszGJ477aiA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numDocumento\" : \"15674799\",\r\n\t\"genero\" : \"\",\r\n\t\"registroMedico\": \"CMP-148888\",\r\n\t\"teléfono\" : \"\",\r\n\t\"direccion\" : \r\n    {\r\n\t \t\"via\" :   \"\",\r\n\t\t\"numeroPredio\" : \"\",\r\n\t\t\"distrito\" : \"San Isidro\",\r\n\t\t\"provincia\": \"\",\r\n\t\t\"departamento\" : \"\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/doctor",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"doctor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eliminarDoctor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDc4MzM5NywiZXhwIjoxNzEwNzgzNTE3fQ.c3mul3bgv3Kwm1CxV4WwCbQ04ln4a_fZa4RGiaG60nw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/doctor/41723317",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"doctor",
+										"41723317"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PacienteController",
+					"item": [
+						{
+							"name": "buscarPacienteByDoc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTExMzQyOTQsImV4cCI6MTcxMTEzNDQxNH0.TjYhxUgQ75_fowTL0pov3-wEcpJHl1anUliq3CxuE6w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/paciente/15674799",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"paciente",
+										"15674799"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllEnablePacientes",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDk1MzE3NywiZXhwIjoxNzEwOTUzMjk3fQ.3D3iT4uPk0Br6UvvAuMfzVxbX2c001FHWP31MhXaH1I",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/paciente/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"paciente",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registrarPaciente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzExMTQwNjYyLCJleHAiOjE3MTExNDA3ODJ9.vwKTN-DfQu2v_YyyXPgPueMdogCrRPSC51ub6Fd0MCI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numDocumento\" : \"41854123\",\r\n    \"fechaNacimiento\" : \"24/08/1982\",\r\n\t\"genero\" : \"masculino\",\r\n\t\"telefono\" : \"963478549\",\r\n\t\"direccion\" : \r\n    {\r\n\t \t\"via\" :   \"Av. Mello Franco\",\r\n\t\t\"numeroPredio\" : 208 ,\r\n\t\t\"interior\" : \"Dpto 104\",\r\n\t\t\"referencia\": \"\" ,\r\n\t\t\"distrito\" : \"Jesus Maria\",\r\n\t\t\"provincia\": \"Lima\",\r\n\t\t\"departamento\" : \"Lima\"\r\n    },\r\n    \"contactos\" : [\r\n        {\r\n            \"nombre\" : \"Patricia\",\r\n            \"apellidoPaterno\" : \"Vicente\",\r\n            \"apellidoMaterno\" : \"Sanchez\",\r\n            \"telefono\" : \"985456357\"\r\n        },\r\n        {\r\n            \"nombre\" : \"Zoila\",\r\n            \"apellidoPaterno\" : \"Carranza\",\r\n            \"apellidoMaterno\" : \"Carranza\",\r\n            \"telefono\" : \"985645214\"\r\n        }\r\n    ]\r\n\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/paciente",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"paciente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modificarPaciente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzExMTM5ODQ5LCJleHAiOjE3MTExMzk5Njl9.dv5zt7q1IBR_zukCvnuaI2S_PSTHRT7wfhn7tET9uP8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numDocumento\" : \"15674799\",\r\n    \"fechaNacimiento\" : \"24/08/1982\",\r\n\t\"genero\" : \"masculino\",\r\n\t\"telefono\" : \"963478549\",\r\n\t\"direccion\" : \r\n    {\r\n\t \t\"via\" :   \"Av. Mello Franco\",\r\n\t\t\"numeroPredio\" : 208 ,\r\n\t\t\"interior\" : \"Dpto 104\",\r\n\t\t\"referencia\": \"\" ,\r\n\t\t\"distrito\" : \"Jesus Maria\",\r\n\t\t\"provincia\": \"Lima\",\r\n\t\t\"departamento\" : \"Lima\"\r\n    },\r\n    \"contactos\" : [\r\n         {\r\n            \"nombre\" : \"Zoila\",\r\n            \"apellidoPaterno\" : \"Carranza\",\r\n            \"apellidoMaterno\" : \"Carranza\",\r\n            \"telefono\" : \"985645214\"\r\n        },\r\n        {\r\n            \"nombre\" : \"Patricia\",\r\n            \"apellidoPaterno\" : \"Vicente\",\r\n            \"apellidoMaterno\" : \"Sanchez\",\r\n            \"telefono\" : \"985456357\"\r\n        }\r\n    ]\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/paciente",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"paciente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "eliminarPaciente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDk1MzE3NywiZXhwIjoxNzEwOTUzMjk3fQ.3D3iT4uPk0Br6UvvAuMfzVxbX2c001FHWP31MhXaH1I",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/paciente/41947273",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"paciente",
+										"41947273"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EspecialidadMedicaController",
+					"item": [
+						{
+							"name": "buscarEspecialidad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDgxMjU4OCwiZXhwIjoxNzEwODEyNzA4fQ.B3OfdeKcKuNe_qUfJ1QmwaX2o2DBjwgvXHeirK6e9UA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/especialidad/radioterapia",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"especialidad",
+										"radioterapia"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllREnableEspecialidad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDgxMTY0OSwiZXhwIjoxNzEwODExNzY5fQ.IhJTOXaOVK-voBdnSajEKwx_UMgo0P8AhFbjSGuDkOo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/especialidad/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"especialidad",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registrarEspecialidad",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDgxMjU4OCwiZXhwIjoxNzEwODEyNzA4fQ.B3OfdeKcKuNe_qUfJ1QmwaX2o2DBjwgvXHeirK6e9UA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"especialidad\" : \"radioterapia\",\r\n     \"complejidad\"  : \"MED2\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/especialidad",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"especialidad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modificarByNombreEspecilidad",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDgxMjU4OCwiZXhwIjoxNzEwODEyNzA4fQ.B3OfdeKcKuNe_qUfJ1QmwaX2o2DBjwgvXHeirK6e9UA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"especialidad\" : \"radioterapia\",\r\n     \"complejidad\"  : \"MED1\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/especialidad",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"especialidad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDgxMjc0MywiZXhwIjoxNzEwODEyODYzfQ.OFBYvhQmXfTU8PLUoY_AbYSha2AnpP_J7bJEGhzJizA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/especialidad/7",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"especialidad",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "NombreAnalisisController",
+					"item": [
+						{
+							"name": "buscarNombreAnalisis",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDczMDY2MiwiZXhwIjoxNzEwNzMwNzgyfQ.6E0_Dhm1KEDCWs60s69rIPe0j19JKuK-F1fhukvkVVA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/analisis/sangre",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"analisis",
+										"sangre"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllREnableNomAnalisis",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDc3OTgyNiwiZXhwIjoxNzEwNzc5OTQ2fQ.4ffT1LHxowfxrA2Ph9VIn0ChCTCnpRN8l5xlALa1t-g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/analisis/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"analisis",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registrarNombAnalisis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtbW9yYWxlc2NhIiwiaWF0IjoxNzEyMzUxMTQ2LCJleHAiOjE3MTIzNTEyNjZ9.JxpgYW2IQMg03b2QqNFo1YCLE-x_9AiA6n4FBrwtK0w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"analisis\" : \"hemoglobina\",\r\n     \"complejidad\"  : \"LAB1\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/analisis",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"analisis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modificarByNombreAnalisis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDk4MTg1NiwiZXhwIjoxNzEwOTgxOTc2fQ.3ccNNJzOSd3Vjwfi00BJQ0p_TgEM_o6N1jOV4l5S9w4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"analisis\" : \"sangre\",\r\n     \"complejidad\"  : \"LAB1\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/analisis",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"analisis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMDk4MTg1NiwiZXhwIjoxNzEwOTgxOTc2fQ.3ccNNJzOSd3Vjwfi00BJQ0p_TgEM_o6N1jOV4l5S9w4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-registro/api/v1/analisis/2",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-registro",
+										"api",
+										"v1",
+										"analisis",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ms-laboratorio (Int port: 8040)",
+			"item": [
+				{
+					"name": "AnalisisController",
+					"item": [
+						{
+							"name": "BuscarEntity ByID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzNTkwOTcsImV4cCI6MTcxMjM1OTIxN30._lZ-NMobaPl7Eae4lRKjGGkvaaMjKyG7Y40hCXdaZ_I",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/audit/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"audit",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarByID(DTO)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMTA4MjY2NSwiZXhwIjoxNzExMDgyNzg1fQ.tBWcYTBv9TyaFJEuqWuMFSoBLj-DkFp85ZAvcHZ_eOo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/find/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"find",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllEnable(DTO)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzNTUyMDQsImV4cCI6MTcxMjM1NTMyNH0.dHpdAmboOOXdfOXObPH3wWO9Xgmkou85e78pp33sdUE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registrarAnalisis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb2N0b3IiLCJpYXQiOjE3MTEwODE5NTUsImV4cCI6MTcxMTA4MjA3NX0.fnmLkQb2uW0IuLudDiioXjiADU4V99tOHeDYze7Sy30",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\" : \"2\",\r\n    \"nombreAnalisis\" : \"hemoglobina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tomaDeMuestra",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWIiLCJpYXQiOjE3MTEwODMwNjYsImV4cCI6MTcxMTA4MzE4Nn0.cGZyKeiXuy0Ff9qWURuHEzzVSy4QSwgkGcCCCagTkQs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/muestra/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"muestra",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "registroResultado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWIiLCJpYXQiOjE3MTEwODI1MzIsImV4cCI6MTcxMTA4MjY1Mn0.LyTk4j1Csu9fnPi4_8jxbZHQQF4mg2662OhwOtDN0xI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"idAnalisis\" : 2,\r\n \"resultado\" : \"akdlslf llslfldl laspwefwjfwj kpkppwefjwepwe  kjqpwkewer.\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/resultado",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"resultado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EliminarAnalisis By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb2N0b3IiLCJpYXQiOjE3MTEwODI5NTcsImV4cCI6MTcxMTA4MzA3N30.v-xSu91TcofX1rIAERsZVCVl3W3vOAF1R3u7rPjIOOw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"idAnalisis\" : 1,\r\n \"resultado\" : \"akdlslf llslfldl laspwefwjfwj kpkppwefjwepwe  kjqpwkewer.\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-laboratorio/api/v1/analisis/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-laboratorio",
+										"api",
+										"v1",
+										"analisis",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ms-medicina (Int port: 8030)",
+			"item": [
+				{
+					"name": "ConsultaMedicaController",
+					"item": [
+						{
+							"name": "buscarConsultaEntity By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzNTk0NjAsImV4cCI6MTcxMjM1OTU4MH0.QQu4mIlri6d9ewSATRTqyC-W8l1h-6GLmlt8aqliuUo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta/audit/1",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta",
+										"audit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarProcedimientosForConsulta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTEwNzQyOTcsImV4cCI6MTcxMTA3NDQxN30.fo9eWb4qOtYFBteMfT1IdtK9EX7Wk6Ny2ingHBPgxdM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta/audit/procedimiento/1",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta",
+										"audit",
+										"procedimiento",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarConsutaDTO By Id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMTA3NDI4MCwiZXhwIjoxNzExMDc0NDAwfQ.DKRiIVP_Na1xGwnuqFCTxSEhNNCGMmjlvbHKV0uxudo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta/find/1",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta",
+										"find",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllEnableConsutaDTO",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTIzNTUxMzUsImV4cCI6MTcxMjM1NTI1NX0.qtEiK04rDF5A-SgUa58nuxJdKAyFQQ53MF5wjhwimzk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RegistrarConsultaMedica",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzExMDgyMjIzLCJleHAiOjE3MTEwODIzNDN9.4HzcuFeXrVAQDGaFKc2n04Z9sn3mGDMjobQzaFCJZyg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fechaConsulta\" : \"24/03/2024 14:50\",\r\n    \"idDoctor\" : 2,\r\n    \"idPaciente\" : 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AtenderConsultaMedica",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb2N0b3IiLCJpYXQiOjE3MTEwNzc5OTYsImV4cCI6MTcxMTA3ODExNn0.B2bdjM9B1pST-PxVh7Eji8qyHRiMu7qOMHiDAMazPCs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\"  : 2,\r\n    \"sintomas\"     : \"dolor lumbar\",\r\n    \"diagnostico\"  : \"presion 4ta vertebra\",\r\n    \"tratamiento\" : \"terapia fisica\",\r\n    \"notasMedicas\" : \"\",\r\n    \"procedimientos\" :\r\n    [\r\n        {\r\n            \"tipoProcedimiento\": \"ambulatorio\",\r\n            \"notasProcedimiento\" : \"\"\r\n        },\r\n        {\r\n            \"tipoProcedimiento\": \"terapia fisica\",\r\n            \"notasProcedimiento\" : \"3 veces a la semana\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AtenderConsultaMedica Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzExMDc3ODg2LCJleHAiOjE3MTEwNzgwMDZ9.9oUX8bxMHU3B9wvqRPs_1ZnX1fCb_6Q6XuB4RQHnRTU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/consulta/2",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"consulta",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TriajeController",
+					"item": [
+						{
+							"name": "buscarTriajeEntity by ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeXN0ZW0iLCJpYXQiOjE3MTEwNzgxNzMsImV4cCI6MTcxMTA3ODI5M30.Q3cY1iyOQiQU9U1sVKQyONtmDJpeKyTEGYLq2rCGkfk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\" : 2,\r\n    \"tempCorporal\" : 35.5,\r\n    \"presionArterial\" : \"114/72\",\r\n    \"satOxigeno\" : 97,\r\n    \"sintoma\" : \"\",\r\n    \"observaciones\" : \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/triaje/audit/2",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"triaje",
+										"audit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarTriajeDTO by ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb2N0b3IiLCJpYXQiOjE3MTEwNzg0MjgsImV4cCI6MTcxMTA3ODU0OH0.rGujlyl0PVxfgErkYPv_TU7FC5X2EdRmfQkOD0PU0KA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\" : 2,\r\n    \"tempCorporal\" : 35.5,\r\n    \"presionArterial\" : \"114/72\",\r\n    \"satOxigeno\" : 97,\r\n    \"sintoma\" : \"\",\r\n    \"observaciones\" : \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/triaje/find/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"triaje",
+										"find",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscarAllEnableTriajeDTO",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMTA3OTMyMiwiZXhwIjoxNzExMDc5NDQyfQ.bZ7qHGb5jvRE4bBv9WqBZDNwLjI67HPqfXbdv6qKQnM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/triaje/all",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"triaje",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atencion Triaje",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudXJzZSIsImlhdCI6MTcxMTA3NzQzOCwiZXhwIjoxNzExMDc3NTU4fQ.ClNPuRMI4PKPeqb8hhyccPC3BF_EZ2Z4bmtwG5IloDs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\" : 2,\r\n    \"tempCorporal\" : 35.5,\r\n    \"presionArterial\" : \"114/72\",\r\n    \"satOxigeno\" : 97,\r\n    \"sintoma\" : \"\",\r\n    \"observaciones\" : \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/triaje",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"triaje"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar Triaje by ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMTA3OTMyMiwiZXhwIjoxNzExMDc5NDQyfQ.bZ7qHGb5jvRE4bBv9WqBZDNwLjI67HPqfXbdv6qKQnM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idConsulta\" : 2,\r\n    \"tempCorporal\" : 35.5,\r\n    \"presionArterial\" : \"114/72\",\r\n    \"satOxigeno\" : 97,\r\n    \"sintoma\" : \"\",\r\n    \"observaciones\" : \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://hosp-service.eastus.cloudapp.azure.com:8080/ms-medicina/api/v1/triaje/3",
+									"protocol": "http",
+									"host": [
+										"hosp-service",
+										"eastus",
+										"cloudapp",
+										"azure",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"ms-medicina",
+										"api",
+										"v1",
+										"triaje",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
